@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login1.css">
+</head>
+<body>
+    <button onclick="sign()" style="width: auto;"> sign in</button>
+    <button onclick="fun()" style="width:auto;">Login</button>
+
+<div id="id1" class="modal">
+  <form class="modal-content animate">
+    <div class="cross">
+      <span onclick="sign1()" class="close">&times;</span>
+    </div>
+    <div class="container">
+      <label for="fname"><b>First Name</b></label>
+      <input type="text" placeholder="Enter First Name" name="fname"  required>
+
+      <label for="lname"><b>Last Name</b></label>
+      <input type="text" placeholder="Enter Second Name" name="lname" required>
+
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" onchange="f1(event)" required>
+
+      <label for="cpsw"><b>Create Password</b></label>
+      <input type="password" placeholder="Create Password" name="cpsw" onchange="f2(event)" required>
+
+      <label for="vpsw"><b>Verify Password</b></label>
+      <input type="password" placeholder="Verify Password" name="cpsw" onchange="f3(event)" required>
+        
+      <button type="submit" onclick="set(event)">sign in</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container">
+      <button type="button" onclick="sign1()" class="cancelbtn">Cancel</button>
+      <span class="psw">already have an account<a href="#" onclick="fun(),sign1()" style="text-underline-offset: 5px;"> login</a></span>
+    </div>
+  </form>
+</div>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate">
+    <div class="cross">
+      <span onclick="fun1()" class="close">&times;</span>
+    </div>
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required onchange="final1(event)">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required onchange="final2(event)">
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <button type="submit" onclick="set1(event,`modal-content`)"> Login</button>
+      
+    </div>
+
+    <div class="container">
+
+      <span>Don't have an account?<a href="#" onclick="sign(),fun1()">sign up</a></span>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

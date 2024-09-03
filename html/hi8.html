@@ -1,0 +1,414 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/Multiplex.css">
+    </head>
+    <style>
+    body{
+        background-color:white;
+
+    }
+    .navbar {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    /* position: fixed; */
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    /* margin-right: px; */
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    /* margin-left:50px; */
+}
+
+.nav-options {
+    display: flex;
+    align-items: center;
+}
+
+.options {
+    margin: 0 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+.options:hover{
+    text-decoration: 2px underline red;
+    text-underline-offset: 10px;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login, .signup {
+    margin: 0 10px;
+    cursor: pointer;
+    color: black;
+    font-weight: 700;
+}
+.login:hover , .signup:hover{
+    color: green;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    width: 92%;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu .options {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+}
+@media (max-width: 800px) {
+    .nav-options {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block !important;
+    }
+    .auth-buttons {
+        display: none;
+    }
+    .inner_child img{
+        height: 300px;
+    }
+    .slick-dots{
+        left: 38%;
+    }
+    .reg_but_1{
+        width: 80%;
+    }
+}
+
+    .food_items{
+    width: 99% !important;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    /* margin-left: 20px; */
+    position: absolute;
+}
+.it1:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it2:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it3:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it4:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it5:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it6:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it7:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it8:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it9:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+.fashion1{
+    width: 100%;
+    height: 60px;
+    border: 3px solid transparent;
+    border-bottom-color: black;
+}
+.fashioncat{
+    width: fit-content;
+    margin-left: 3%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+    font-size: 25px;
+}
+.fdt1{
+    height: 300px;
+    width: 350px;
+    /* background-color: wheat; */
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.item_image{
+    height: 220px;
+    width: 100%;
+    background-image: url(../images/img64.jpeg);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: 100% 100%;
+}
+.matter{
+    width: 50%;
+    float: left;
+    text-align: center;
+    align-content: center;
+    color: rgb(20, 17, 17);
+    margin-top: 10px;
+}
+#b1{
+    height: 50px;
+    width: 80px;
+    float: right;
+    background-color: rgb(32, 162, 237);
+    color: white;
+    font-weight: 600;
+    border: 2px solid rgb(32, 162, 237);
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.itm2{
+    background-image: url(../images/img59.jpg);
+}
+.itm3{
+    background-image: url(../images/img60.jpg);
+}
+.itm4{
+    background-image: url(../images/img63.jpg);
+}
+.itm5{
+    background-image: url(../images/img64.jpg);
+}
+.itm6{
+    background-image: url(../images/img65.jpg);
+}
+
+.itm7{
+    background-image: url(../images/img66.jpg);
+}
+
+.itm8{
+    background-image: url(../images/img67.jpg);
+}
+
+.itm9{
+    background-image: url(../images/img68.jpg);
+}
+.itm1{
+    background-image: url(../images/img69.jpg);
+}
+
+.backhome{
+    height:45px;
+    width:140px;
+    border-radius: 100px;
+    justify-content: center;
+    font-weight: 900;
+    background-color: red;
+    color: black;
+    position: absolute;
+    bottom: -67%;
+    left:45%;
+    /* z-index: 1; */
+}
+@media screen and (max-width:1300px){
+    .backhome{
+        bottom:-146%;
+    }
+}
+@media screen and (max-width:870px){
+    .backhome{
+        bottom:-326%;
+        left:35%;
+    }
+}
+
+
+    </style>
+    <body>
+        <!-- <header class="navbar">
+            <div class="logo">
+                <img src="./f2/logo.jpg" alt="Multiio Logo">
+                <span>Multiio</span>
+            </div>
+            <nav class="nav-options">
+                <div class="options"><i class="fa-solid fa-house" style="color: #bd2626;"></i> Home</div>
+                <div class="options"><i class="fa-solid fa-bowl-food" style="color: #bd2626;"></i> Food</div>
+                <div class="options"><i class="fa-solid fa-shirt" style="color: #bd2626;"></i> Fashion</div>
+                <div class="options"><i class="fa-solid fa-clapperboard" style="color: #bd2626;"></i> Movies</div>
+            </nav>
+            <div class="auth-buttons">
+                <div class="login" onclick="fun()" style="width:auto;">Login</div>
+                <div class="signup" onclick="sign()" style="width: auto;">Signup</div>
+            </div>
+            <div class="mobile-menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars" style="color: black;"></i>
+            </div>
+        </header>
+    
+        <div class="mobile-menu">
+            <div class="options">Home</div>
+            <div class="options">Food</div>
+            <div class="options">Fashion</div>
+            <div class="options">Movies</div>
+            <div class="options" class="login"  onclick="fun()" style="width:auto;">Login</div>
+            <div class="options" class="signup" onclick="sign()" style="width: auto;">Signup</div>
+        </div> -->
+        <div class="food">
+            <div class="fashion1">
+                <div class="fashioncat"><b>SKIN CARE</b></div>
+            </div>
+            <div class="food_items">
+                <div class="fdt1 it1">
+                    <div class="item_image itm1"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 120</b> <br> Meesho</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+                <div class="fdt1 it2">
+                    <div class="item_image itm2"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 220</b> <br> Flipkart</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it3">
+                    <div class="item_image itm3"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 320</b> <br> Myntra</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it4">
+                    <div class="item_image itm4"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 420</b> <br> Flipkart</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it5">
+                    <div class="item_image itm5"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 520</b> <br> Myntra</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it6">
+                    <div class="item_image itm6"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 720</b> <br> Meesho</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it7">
+                    <div class="item_image itm7"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 620</b> <br> Flipkart</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it8">
+                    <div class="item_image itm8"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 720</b> <br> Myntra</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it9">
+                    <div class="item_image itm9"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px; border-bottom-right-radius: 20px;">
+                        <div class="matter"><b>Rs 820</b> <br> Meesho</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+            <button class="backhome" onclick="goback()">Back To Home</button>
+        <script>
+         function goback() {
+            window.location.href = "file:///C:/Users/K%20DIVYA%20NAGA%20SRI/OneDrive/diya/multiplex.html";
+             }
+            </script>
+    </body>
+</html>

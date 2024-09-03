@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form1.css">
+    <script src="../js/form1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <center>
+    <div class="final_down">
+        <div class="final_down_1">Slot Booking Id
+        <span onclick="booking_close()" class="book_close">&times;</span>
+
+        </div>
+        <div class="final_down_2">
+            <div class="final_down_23">
+            <div class="final_down_21">Name</div>
+            <div class="final_down_22" id="fl_name">veera venu</div>
+            </div>
+        </div>
+        <div class="final_down_2">
+            <div class="final_down_23">
+            <div class="final_down_21">Phone Number</div>
+            <div class="final_down_22" id="Phone_no">veera venu</div>
+            </div>
+        </div>
+        <div class="final_down_2">
+            <div class="final_down_23">
+            <div class="final_down_21">Age</div>
+            <div class="final_down_22" id="age_20">veera venu</div>
+            </div>
+        </div>
+        <div class="final_down_2">
+            <div class="final_down_23">
+            <div class="final_down_21">Event</div>
+            <div class="final_down_22" id="Event_20">veera venu</div>
+            </div>
+        </div>
+        <div class="final_down_2">
+            <div class="final_down_23">
+            <div class="final_down_21">Day</div>
+            <div class="final_down_22" id="day_20">veera venu</div>
+        </div>
+        </div>
+        <div class="final_down_2">
+            <div class="final_down_23">
+            <div class="final_down_21">Slot Timing</div>
+            <div class="final_down_22" id="slot_timing">veera venu</div>
+        </div>
+        </div>
+        <div class="FINA">
+        <div class="final_down_3">
+            <div class="qr_code"></div>
+            
+        </div>
+            <div class="final_down_31">
+                <button id="download">Download <i class="fa-solid fa-download" style="color: #000000;"></i></button>
+            </div>
+        </div>
+    </div>
+    </center>
+    <!-- <button onclick="book()">book</button> -->
+    <div class="block_1 animate_booking" id="book">
+        <form action="" class="block_11" id="bookingform">
+            <div class="cross" onclick="closeForm()">
+                <span onclick="closeForm()" class="close">&times;</span>
+              </div>
+              <div class="container">
+                <label for="fname"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="fname" id="fname"  >
+          
+                <label for="lname"><b>Last Name</b></label>
+                <input type="text" placeholder="Enter Second Name" name="lname" id="lname" >
+          
+                <label for="pno"><b>Phone number</b></label>
+                <input type="number" placeholder="Enter Phone Number" name="pno" id="pno" >
+          
+                <label for="age"><b>Age</b></label>
+                <input type="number" placeholder="Enter Age" name="age" id="age">
+                
+                <label for="eve"><b>Select An Event</b></label> 
+                <select name="eve" id="eve" class="select_block">
+                    <option value="select">select</option>
+                    <option value="singing">singing</option>
+                    <option value="flash mob">flash mob</option>
+                    <option value="fashion Show">fashion Show</option>
+                    <option value="Gaming">Gaming</option>
+                    
+                </select><br>
+                <label for="day"><b>book your day </b></label>&nbsp;
+                <select name="day" id="day" class="select_block">
+                    <option value="select">select</option>
+                    <option value="Monday">Monday</option>
+                    <option value="Tuesday">Tuesday</option>
+                    <option value="Wednesday">Wednesday</option>
+                    <option value="Thursday">Thursday</option>
+                    <option value="Friday">Friday</option>
+                    <option value="Saturday">Saturday</option>
+                    <option value="Sunday">Sunday</option>
+                </select><br>
+                <label for="slot" ><b>Select Time</b></label>
+                <input type="radio" name="slot" value="11:00 AM" class="radio_button"><label for="slot">11:00 AM</label>
+                <input type="radio" name="slot" value="2:00 PM"><label for="slot">2:00 PM</label>
+                <input type="radio" name="slot" value="6:00 PM"><label for="slot">6:00 PM</label>
+                <br>
+                <button class="book" onclick="finalBook(event)">BOOK</button>
+        </form>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js" integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="../js/form1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> -->
+
+</body>
+</html>

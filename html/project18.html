@@ -1,0 +1,268 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/Multio1.css">
+    </head>
+    <style>
+
+.food_items{
+    width: 99% !important;
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin-left: 20px; */
+    position: absolute;
+}
+.fdt1{
+    height: 300px;
+    width: 350px;
+    /* background-color: wheat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.item_image{
+    height: 220px;
+    width: 100%;
+    background-image: url(../images/piz1.jpeg.jpg);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-size: 100% 100%;
+}
+.matter{
+    width: 50%;
+    float: left;
+    text-align: center;
+    align-content: center;
+    color: rgb(20, 17, 17);
+    margin-top: 10px;
+}
+#b1{
+    height: 50px;
+    width: 80px;
+    float: right;
+    background-color: rgb(32, 162, 237);
+    color: white;
+    font-weight: 600;
+    border: 2px solid rgb(32, 162, 237);
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.itm2{
+    background-image: url(../images/piz2.jpeg.jpg);
+}
+.itm3{
+    background-image: url(../images/piz3.jpeg.jpg);
+}
+.itm4{
+    background-image: url(../images/piz4.jpeg.jpg);
+}
+.itm5{
+    background-image: url(../images/piz5.jpeg.jpg);
+}
+.itm6{
+    background-image: url(../images/piz6.jpeg.jpg);
+}
+
+.itm7{
+    background-image: url(../images/piz7.jpeg.jpg);
+}
+
+.itm8{
+    background-image: url(../images/piz8.jpeg.jpg);
+}
+
+.itm9{
+    background-image: url(../images/piz9.jpeg.jpg);
+}
+
+.backhome{
+    height:45px;
+    width:140px;
+    border-radius: 100px;
+    justify-content: center;
+    font-weight: 900;
+    background-color: red;
+    color: black;
+    /* z-index: 1; */
+}
+.foodcat{
+    width: 100%;
+    height: 100px;
+    border: 2px solid transparent;
+    border-bottom-color: black;
+}
+.food_cat{
+    width: fit-content;
+    margin-left: 3%;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 25px;
+}
+
+.it1:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it2:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it3:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it4:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it5:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it6:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it7:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it8:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.it9:hover{
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgb(35, 34, 34);
+}
+
+.backhome{
+        height:45px;
+        width:140px;
+        border-radius: 100px;
+        justify-content: center;
+        font-weight: 900;
+        background-color: red;
+        color: black;
+        position: absolute;
+        bottom: -49%;
+        left:45%;
+        /* z-index: 1; */
+    }
+    @media screen and (max-width:1300px){
+        .backhome{
+            bottom:-146%;
+        }
+    }
+    @media screen and (max-width:870px){
+        .backhome{
+            bottom:-305%;
+            left:35%;
+        }
+    }
+    </style>
+    <body>
+        <div class="food">
+
+            <div class="foodcat">
+                <div class="food_cat"><b>PIZZA</b></div>
+            </div>
+            <div class="food_items">
+                <div class="fdt1 it1">
+                    <div class="item_image"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 150</b> <br> Margherita Magic</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+                <div class="fdt1 it2">
+                    <div class="item_image itm2"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 110</b> <br> Veggie Delight</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it3">
+                    <div class="item_image itm3"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 120</b> <br> Four Cheese Fantasy</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it4">
+                    <div class="item_image itm4"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 130</b> <br> Mediterranean Marvel</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it5">
+                    <div class="item_image itm5"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 120</b> <br> Veggie Delight</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it6">
+                    <div class="item_image itm6"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 125</b> <br> Spicy Sausage Supreme</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it7">
+                    <div class="item_image itm7"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 140</b> <br> Hawaiian Harmony</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it8">
+                    <div class="item_image itm8"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 140</b> <br> Meat Lover's Feast</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it9">
+                    <div class="item_image itm9"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue)">
+                        <div class="matter"><b>Rs 120</b> <br> BBQ Chicken Bliss</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+            <!-- <button class="backhome" onclick="goback()">Back To Home</button> -->
+        <script>
+         function goback() {
+            window.location.href = "D:/react.html/Multiio/Multio_1.html";
+               
+             }
+            </script>
+    </body>
+</html>

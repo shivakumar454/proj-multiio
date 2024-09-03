@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="images/Mainicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/MainProject.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    /> -->
+    <link rel="stylesheet" href="../slick-1.8.1/slick/slick.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo">
+          <img src="../images/logo_cleanup.jpg" alt="Multiio Logo">
+          <span>Multiio</span>
+      </div>
+      <nav class="nav-options">
+          <div class="options" onclick="home()"><i class="fa-solid fa-house" style="color: #bd2626;"></i> Home</div>
+          <div class="options" onclick="food()"><i class="fa-solid fa-bowl-food" style="color: #bd2626;"></i> Food</div>
+        <div class="options" onclick="fashion()"><i class="fa-solid fa-shirt" style="color: #bd2626;"></i> Fashion</div>
+        <div class="options"><i class="fa-solid fa-clapperboard" style="color: #bd2626;"></i> Movies</div>
+    </nav>
+    <div class="auth-buttons">
+        <div class="login" onclick="fun()" style="width:auto;">Login</div>
+        <div class="signup" onclick="sign()" style="width: auto;">Signup</div>
+    </div>
+    <div class="mobile-menu-icon" onclick="toggleMenu('mobile-menu')">
+        <i class="fa-solid fa-bars" style="color: black;"></i>
+    </div>
+</header>
+
+<div class="mobile-menu">
+    <div class="options" onclick="home()">Home</div>
+    <div class="options" onclick="food()">Food</div>
+    <div class="options" onclick="fashion()">Fashion</div>
+    <div class="options">Movies</div>
+    <div class="options" class="login"  onclick="fun()" style="width:auto;">Login</div>
+    <div class="options" class="signup" onclick="sign()" style="width: auto;">Signup</div>
+    <i class="fa-solid fa-x xxx" onclick="fun2('mobile-menu')"></i>
+</div>
+    <div class="moviesliders">
+        <div class="pics">
+                <img src="../images/Kalki2898AD-Banner.jpg" class="img">
+        </div>
+        <div class="pics">
+            <img src="../images/deadpool2.jpg" class="img">
+        </div>
+        <div class="pics">
+            <img src="../images/1455583-sarfira.jpg" class="img">
+        </div>
+        <div class="pics">
+            <img src="../images/indian 2.jpg" class="img">
+        </div>
+        <div class="pics">
+            <img src="../images/twisters.jpeg" class="img">
+        </div>
+        <div class="pics">
+            <img src="../images/Screenshot 2024-07-22 115319.png" class="img">
+        </div>
+    </div>
+    <!-- <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script> -->
+    <script src="../slick-1.8.1/jquery.min.js"></script>
+    <script src="../slick-1.8.1/slick/slick.min.js"></script>
+     <script>
+        $('.moviesliders').slick({
+          // fade:true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          // centerMode:true,
+          // focusOnSelect:true,
+          autoplay:true,
+          speed:1000,
+          pauseOnHover:true
+        });
+      </script>  
+      <div class="text">
+          <div class="juii">
+            <span class="span">Watching Movie for first Time is <b class="b">flirt</b> <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rewatching it is a <b class="b">Date</b>
+            </span>
+            
+          </div>
+      </div>
+      <div class="sections">
+          <div class="cat">
+            Categorys->
+          </div>
+          
+        <div class="Nowshowing" >
+          <a href="#Now_play" style="text-decoration: none; color: black; :hover{color: white;}"><div class="now">Now showing</div></a>
+        </div>
+        <div class="Nowshowing">
+          <a href="#Upcoming" style="text-decoration: none; color:black;" class="up_Com"><div class="now">Upcoming</div></a>
+        </div>
+        <!-- <div class="Nowshowing">
+          Telugu
+        </div>
+        <div class="Nowshowing">
+          Hindhi
+        </div>
+        <div class="Nowshowing">
+          English
+        </div> -->
+      </div>
+      <div class="Nowplaying" id="Now_play">
+        Now Showing:
+      </div>
+      <div class="Telugu">
+        Telugu:
+      </div>
+      <div class="Telugumovies">
+          <div class="movie">
+            <img src="../images/Kalki-2898.jpg">
+            <b>kalki-2898 AD(2024) </b>
+            <hr>
+            <p>Book Ticket <i class="fa-solid fa-ticket"></i> </p>
+            
+          </div>
+          <div class="movie">
+            <img src="../images/Indian_2 move.jpg">
+            <b>indian 2(2024)</b>
+            <hr>
+            <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+          </div>
+          <div class="movie">
+            <img src="../images/pekamedalu.jpg">
+            <b>pekamedalu(2024)</b>
+            <hr>
+            <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+          </div>
+      </div>
+      <div class="Hindhi">
+        Hindi:
+      </div>
+      <div class="Hindhimovies">
+        <div class="movie">
+          <img src="../images/1455583-sarfira.jpg">
+          <b>Sarfira(2024)</b>
+          <hr>
+          <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+        </div>
+        <div class="movie">
+          <img src="../images/badnews.webp">
+          <b>Bad news(2024)</b>
+          <hr>
+          <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+        </div>
+        <div class="movie">
+          <img src="../images/Munjya_2024.jpg">
+          <b>Munjya(2024)</b>
+          <hr>
+          <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+        </div>
+    </div>
+    <div class="English">
+      English:
+    </div>
+    <div class="Englishmovies">
+      <div class="movie">
+        <img src="../images/twisters.jpeg">
+        <b>Twisters(2024)</b>
+        <hr>
+        <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+      </div>
+      <div class="movie">
+        <img src="../images/deadpool vs.jpg">
+        <b>deadpool Wolverine(2024)</b>
+        <hr>
+        <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+      </div>
+      <div class="movie">
+        <img src="../images/despibale me 4.jpg">
+        <b>Despicable Me 4(2024)</b>
+        <hr>
+        <p>Book Ticket <i class="fa-solid fa-ticket"></i></p>
+      </div>
+  </div>
+  <div class="Upcoming" id="Upcoming">
+    Upcoming:
+  </div>
+  <div class="Telugu2">
+    Telugu:
+  </div>
+  <div class="Telugumovies2">
+      
+      <div class="movie">
+        <img src="../images/Devara-2024.jpg">
+        <b>Devara(2024)</b>
+        <hr>
+        <p class="p">Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+      </div>
+    
+      <div class="movie">
+        <img src="../images/Pushpa2.jpg">
+        <b>Pushpa2(2024)</b>
+        <hr>
+        <p class="p"> Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+      </div>
+      <div class="movie">
+        <img src="../images/saripodha.jpg">
+        <b>Saripodhaa Sanivaaram(2024)</b>
+        <hr>
+        <p class="p"> Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+      </div>
+  </div>
+  <div class="Hindhi2">
+    Hindi:
+  </div>
+  <div class="Hindhimovies2">
+    <div class="movie">
+      <img src="../images/The-UP-Files.jpeg">
+      <b>The Up Files(2024)</b>
+      <hr>
+      <p class="p">Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+    </div>
+    <div class="movie">
+      <img src="../images/Gharat_Ganpati.jpg">
+      <b>Gharat Ganpati(2024)</b>
+      <hr>
+      <p class="p">Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+    </div>
+    <div class="movie">
+      <img src="../images/kill.jpg">
+      <b>Kill(2024)</b>
+      <hr>
+      <p class="p">Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+    </div>
+</div>
+  <div class="English2">
+    English:
+  </div>
+  <div class="Englishmovies2">
+    <div class="movie">
+      <img src="../images/english1.png">
+      <b> The Screts of DumbleDore(2024)</b>
+      <hr>
+      <p class="p">Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+    </div>
+    <div class="movie">
+      <img src="../images/english 2.jpeg">
+      <b>Transformers One(2024)</b>
+      <hr>
+      <p class="p">Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+    </div>
+    <div class="movie">
+      <img src="../images/english3.jpeg">
+      <b>Venom The Last Dance(2024)</b>
+      <hr>
+      <p class="p">Get Notify <i class="fa-regular fa-bell" onclick="fun1()"></i></p>
+    </div>
+</div>
+<script>
+  function fun1(){
+    var x = document.getElementsByName("i")[0];
+    alert("you Get notification on movie release!...");
+    console.log(x);
+  }
+  function toggleMenu(data) {
+   var a = document.getElementsByClassName(data)[0];
+   a.style.width='150px';
+
+   var y = document.querySelector("body");
+  //  y.style.filter="blur(3px)";
+   console.log(y);
+}
+function fun2(data){
+  var  z = document.getElementsByClassName(data)[0];
+  z.style.width="0px";
+  z.style.color="red";
+   console.log(z);
+}
+function home(){
+  window.location.href = "../index.html"
+}
+function food(){
+  window.location.href = "./Multio_food.html"
+}
+function fashion(){
+    window.location.href="./multiplex.html"
+}
+</script>
+</body>
+</html>

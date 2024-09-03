@@ -1,0 +1,167 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/Multio1.css">
+        <!-- <link rel="stylesheet" href=""> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="food">
+            <header class="navbar">
+                <div class="logo">
+                    <img src="../images/logo_cleanup.jpg" alt="Multiio Logo">
+                    <span>Multiio</span>
+                </div>
+                <nav class="nav-options">
+                    <div class="options" onclick="home()"><i class="fa-solid fa-house" style="color: #bd2626;"></i> Home</div>
+                    <div class="options" onclick="food()"><i class="fa-solid fa-bowl-food" style="color: #bd2626;"></i> Food</div>
+                  <div class="options" onclick="fashion()"><i class="fa-solid fa-shirt" style="color: #bd2626;"></i> Fashion</div>
+                  <div class="options" onclick="movies()"><i class="fa-solid fa-clapperboard" style="color: #bd2626;"></i> Movies</div>
+              </nav>
+              <div class="auth-buttons">
+                  <div class="login" onclick="fun()" style="width:auto;">Login</div>
+                  <div class="signup" onclick="sign()" style="width: auto;">Signup</div>
+              </div>
+              <div class="mobile-menu-icon" onclick="toggleMenu('mobile-menu')">
+                  <i class="fa-solid fa-bars" style="color: black;"></i>
+              </div>
+          </header>
+          
+          <div class="mobile-menu">
+              <div class="options"onclick="home()">Home</div>
+              <div class="options">Food</div>
+              <div class="options"onclick="fashion()">Fashion</div>
+              <div class="options"onclick="movies()">Movies</div>
+              <div class="options" class="login"  onclick="fun()" style="width:auto;">Login</div>
+              <div class="options" class="signup" onclick="sign()" style="width: auto;">Signup</div>
+              <i class="fa-solid fa-x xxx" onclick="fun2('mobile-menu')"></i>
+          </div>
+            <div class="foodcat">
+                <div class="food_cat"><b>CATEGORIES</b></div>
+            </div>
+            <div class="food_items_list">
+                <div class="foodch" onclick="fun11()">Soups</div>
+                <div class="foodch" onclick="fun22()">Starters</div>
+                <div class="foodch" onclick="fun33()">Biriyani</div>
+                <div class="foodch" onclick="fun44()">FriedRice</div>
+                <div class="foodch" onclick="fun55()">Curries</div>
+                <div class="foodch" onclick="fun66()">Noodles</div>
+                <div class="foodch" onclick="fun77()">Pizza</div>
+                <div class="foodch" onclick="fun88()">MilkShakes</div>
+                <div class="foodch" onclick="fun100()">Cakes</div>
+            </div>
+            <div class="food_items ">
+                <div class="fdt1 it1">
+                    <div class="item_image"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div class="matter"><b>Rs 120</b> <br> Chilli Chicken</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+                <div class="fdt1 it2">
+                    <div class="item_image itm2"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div class="matter"><b>Rs 99</b> <br> Tomato Soup</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it3">
+                    <div class="item_image itm3"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div class="matter"><b>Rs 150</b> <br> Egg Fried Rice</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it4">
+                    <div class="item_image itm4"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div class="matter"><b>Rs 99</b> <br> Strawberry Milkshake</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it5">
+                    <div class="item_image itm5"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div class="matter"><b>Rs 500</b> <br> Fruit Cake</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+
+                <div class="fdt1 it6">
+                    <div class="item_image itm6"></div>
+                    <div style="height: 60px; width: 100%; background: linear-gradient(to right, skyblue, aliceblue);
+                    border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+                        <div class="matter"><b>Rs 120</b> <br> Veg Pizza</div>
+                        <button id="b1" onclick="window.alert('Successfully added')">ADD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function fun11() {
+                window.location.href = "./project12.html";
+                
+            }
+            function fun22() {
+                window.location.href = "./project13.html";
+            }
+            function fun33() {
+                window.location.href = "./project14.html";
+            }
+            function fun44() {
+                window.location.href = "./project15.html";
+            }
+            function fun55() {
+                window.location.href = "./project16.html";
+            }
+            function fun66() {
+                window.location.href = "./project17.html";
+            }
+            function fun77() {
+                window.location.href = "./project18.html";
+            }
+            function fun88() {
+                window.location.href = "./project19.html";
+            }
+            function fun100() {
+                window.location.href = "./project112.html";
+            }
+            function fun111() {
+                window.location.href = "./project113.html";
+            }
+            function home(){
+                window.location.href = "../index.html"
+            }
+            function movies(){
+                window.location.href = "./movies.html"
+            }
+            function fashion(){
+                window.location.href="./multiplex.html"
+            }
+            function fashion(){
+    window.location.href="./multiplex.html"
+}
+function toggleMenu(data) {
+    var a = document.getElementsByClassName(data)[0];
+    a.style.width='150px';
+ 
+    var y = document.querySelector("body");
+   //  y.style.filter="blur(3px)";
+    console.log(y);
+ }
+ function fun2(data){
+   var  z = document.getElementsByClassName(data)[0];
+   z.style.width="0px";
+   z.style.color="red";
+    console.log(z);
+ }
+        </script>
+    </body>
+</html>
